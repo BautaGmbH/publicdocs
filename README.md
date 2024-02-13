@@ -3,6 +3,6 @@
 
 ## Setting up the hardware
 
-### Setting up the blindsensor
+### Setting up the sensor unit
 
 ### Setting up the on-premise compute unit
