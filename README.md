@@ -12,7 +12,7 @@ When assembling / setting up the drinnenbox we recommend to start with the senso
 
 ### Start-up sequence
 
-### Quick verification if it is all is running
+### Quick verification if all is running
 
 ### Detail usages
 
