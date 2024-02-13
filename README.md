@@ -12,7 +12,7 @@ When assembling / setting up the drinnenbox we recommend to start with the senso
 The sensor-unit comes with the following parts (as depicted above):
  
  * The main sensor unit box
- * a 5m long Ethernet Cat5 cabel
+ * 5 meter long Ethernet Cat5 cabel
  * Two parts for wall mounting
    * A tilting bracket
    * A mounting plate on top of the tilting bracket
