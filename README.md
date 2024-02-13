@@ -1,1 +1,1 @@
-# BAUTA's public installation and usage documentation for BAUTA's Drinnenbox
+# Public installation and usage documentation for BAUTA's Drinnenbox
