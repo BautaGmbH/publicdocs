@@ -1,2 +1,1 @@
-# publicdocs
-BAUTA's public documentation repository
+# BAUTA's public installation and usage documentation for BAUTA's Drinnenbox
