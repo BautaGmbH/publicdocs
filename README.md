@@ -9,14 +9,16 @@ When assembling / setting up the drinnenbox we recommend to start with the senso
 ### Setting up the sensor unit
 
 <p align="center"><img width=1600 src="assets/drinnenbox_sensor_parts.jpg" /></p>
-The sensor-unit comes with the following parts (as depicted above)
+The sensor-unit comes with the following parts (as depicted above):
  
- * The main unit module
+ * The main sensor unit box
  * a 5m long Ethernet Cat5 cabel
  * Two parts for wall mounting
    * A tilting bracket
    * A mounting plate on top of the tilting bracket
-   
+   * A M3 screw to attach the tilting bracket to the sensor unit box
+ * A 5V/3A power supply unit
+
 
 ### Setting up the on-premise compute unit
 
