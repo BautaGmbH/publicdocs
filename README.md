@@ -8,6 +8,8 @@ When assembling / setting up the drinnenbox we recommend to start with the senso
 
 ### Setting up the sensor unit
 
+<p align="center"><img width=1600 src="assets/drinnenbox_sensor_parts.jpg" /></p>
+
 ### Setting up the on-premise compute unit
 
 ### Start-up sequence
