@@ -27,10 +27,14 @@ Use the M4 scew to attach the tilting bracket to the sensor unit box
 For this you need a size 3 allen key
 
 #### Second step
-
 Slide the mouning plate on top of the tilting bracket
 
 <p align="center"><img width=1600 src="assets/drinnebox_sensor_wall_fixation_part2.jpg"/></p>
+
+#### Second step
+Now connect on end of the Ethernet Cat5 cabel to the network part on the back of the sensor unit box
+
+<p align="center"><img width=1600 src="assets/drinnenbox_sensor_network_connection.jpg"/></p>
 
 
 ### Setting up the on-premise compute unit
