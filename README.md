@@ -41,6 +41,9 @@ Now your the sensor unit is ready to be fixated onto the wall or ceiling the rec
 <p align="center"><img width=1600 src="assets/drinnenbox_on_the_wall.jpg"/></p>
 
 ### Setting up the on-premise compute unit
+The on-premise compute unit does not come with any additional parts that need to be mounted
+
+<p align="center"><img width=1600 src="assets/forcr_jetson_unit_just_power.jpg"/></p>
 
 ### Start-up sequence
 
