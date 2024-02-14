@@ -16,9 +16,13 @@ The sensor-unit comes with the following parts (as depicted above):
  * Two parts for wall mounting
    * A tilting bracket
    * A mounting plate on top of the tilting bracket
-   * A M3 screw to attach the tilting bracket to the sensor unit box
+   * A M4 screw to attach the tilting bracket to the sensor unit box
  * A 5V/3A power supply unit
 
+#### First step
+Use the M4 scew to attach the tilting bracket to the sensor unit box
+
+<p align="center"><img width=1600 src="assets/drinnebox_sensor_wall_fixation_part1.jpg"/></p>
 
 ### Setting up the on-premise compute unit
 
