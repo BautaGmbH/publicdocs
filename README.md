@@ -41,9 +41,15 @@ Now your the sensor unit is ready to be fixated onto the wall or ceiling the rec
 <p align="center"><img width=1600 src="assets/drinnenbox_on_the_wall.jpg"/></p>
 
 ### Setting up the on-premise compute unit
-The on-premise compute unit does not come with any additional parts that need to be mounted
+The on-premise compute unit does not come with any additional parts that need to be mounted. Out of the box it will look like this
 
 <p align="center"><img width=1600 src="assets/forcr_jetson_unit_just_power.jpg"/></p>
+
+However before connecting it to power or use one of the two ethernet cable connectors you can see in the picture it is crucial that you connect the etnerhet cable from the blndsensor in the network port as shown in the picture
+
+<p align="center"><img width=1600 src="assets/forcr_jetson_blindsensor_connection.jpg"/></p>
+
+The reason is that the on-premise unit has two netwoek adapters one that is configured to a fixed private network address to be able to communicate with the sensor unit and the other one is set to dynamic/DHCP so you can connect it to your network. The hardware address (MAC) for the dynamic network connector should have been provided as a label in the box. This will allow you to discover it in your network.
 
 ### Start-up sequence
 
