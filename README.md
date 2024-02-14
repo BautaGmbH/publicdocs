@@ -53,6 +53,8 @@ The reason is that the on-premise unit has two netwoek adapters one that is conf
 
 ### Start-up sequence
 
+The easiest solution is to have both power supplies of the sensor unit and the compute unit in a double or multi-socket wall power socket. If that is not feasible than the recommended start/power up sequence is to first provide power to the sensor unit by plug-in its power supply to the wall socket. It takes about 40 seconds for the sensor unit to become fully operational. Next would then be to plug-in the power supply of the compute unit to the wall socket. Please make sure that the compute unit's empty network connector has been connected to your network before you plug it in.
+
 ### Quick verification if all is running
 
 ### Detail usages
