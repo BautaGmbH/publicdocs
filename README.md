@@ -53,7 +53,7 @@ The reason is that the on-premise unit has two netwoek adapters one that is conf
 
 ### Start-up sequence
 
-The easiest solution is to have both power supplies of the sensor unit and the compute unit in a double or multi-socket wall power socket. If that is not feasible than the recommended start/power up sequence is to first provide power to the sensor unit by plug-in its power supply to the wall socket. It takes about 40 seconds for the sensor unit to become fully operational. Next would then be to plug-in the power supply of the compute unit to the wall socket. Please make sure that the compute unit's empty network connector has been connected to your network before you plug it in. The compute unit takes usually 1 minute before it start receiving data from the sensor unit. However, at each startup sequence the compute unit is looking for new software updates which when found will install new updates automatically this can extend he waiting period significantly. The data service that can be used to querry the compute unit for latest data and sequence data until now usually takes two minutes to become active. This means if you do not see the unit responding immediately after switching on to not worry wait about five minutes to try again.
+The easiest solution is to have both power supplies of the sensor unit and the compute unit in a double or multi-socket wall power socket. If that is not feasible than the recommended start/power up sequence is to first provide power to the sensor unit by plug-in its power supply to the wall socket. It takes about 40 seconds for the sensor unit to become fully operational. Next would then be to plug-in the power supply of the compute unit to the wall socket. Please make sure that the compute unit's empty network connector has been connected to your network before you plug it in. The compute unit takes usually 1 minute before it starts receiving data from the sensor unit. However, at each startup sequence the compute unit is looking for new software updates which when found will install new updates automatically this can extend he waiting period significantly. The data service that can be used to querry the compute unit for latest data and sequence usually takes two minutes to become active. This means if you do not see the unit responding immediately after switching on to not worry wait about five minutes to try again.
 
 ### Quick verification if all is running
 
@@ -61,7 +61,10 @@ After 2-3 minutes after switching both units on in the order suggested above. Yo
 
 http://IP_ADDRESS_OF_COMPUTE_UNIT:8080/getstatus
 
-The browser should then return you a JSON String showing you the different system temperatures and also a field SystemRunning. If SystemRunning is False but it is still displaying temperatures that means that the part receiving and analysing the data stream 
+The browser should then return you a JSON String showing you the different system temperatures and also a field SystemRunning. If SystemRunning is False but it is still displaying temperatures that means that the part receiving and analysing the data stream is not running. The most likely reason for this is that it was unable to connect to the sensor unit. It will automically try to do so every 5 seconds. So please make sure the network cable from the sensor unit is plugged into the right network port of the compute unit (see picture above). 
+Once you have confirmed that everything is up and running you can get a visual snapshot from the sensor view using the web broweser again by using following address
+
+http://IP_ADDRESS_OF_COMPUTE_UNIT:8080/getsnapshot
 
 ### Detail usages
 
