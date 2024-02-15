@@ -82,7 +82,8 @@ In this section we describe some general notes about the drinnenbox sensor and a
 4. Requesting sequence data always goes backwards from the current time you request
 5. It is recommended to request sequence data in reasonable short time sequences. Although the system does not prevent you to look back multiple hours but this might lead into a very long response time
 6. At the fist startup it could be that it restarts immediately because once it has been off the internet the internal system clock might have reseted and once the system starts to sync with nntp the date and time move beyond the 20 hours range
-  
+7. The compute unit only allows to take a snapshot every 30 seconds. Since the timming of the software running on the compute unit is very resource/time critical this should users from hammering it with unnecessary requests as this system is not designed for image streaming purposes
+   
 #### Troubleshoots
 1. In case it takes very long to obtain a snapshot via the getsnapshot API call it could be that either the data receiving and detector part on the compute unit has ran into some issue and is hanging in this case you can try to use
 ```
