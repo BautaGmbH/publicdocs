@@ -75,8 +75,14 @@ Once you have the system running, verified it is running and alligned the sensor
 ### Notes
 In this section we describe some general notes about the drinnenbox sensor and a few troubleshoot suggestions.
 
-#### general system notes
-
+#### General system notes
+1. As previous mentioned the system checks for software updates at every startup so please make sure the network connection has the ability to comunicate to outside. Both port 8080 and 80 is used for getting updates.
+2. After each restart of the compute unit previous sequence data gets deleted. So you can not look back beyond data that has been recorded prior the restart sequence
+3. The compute unit automatically restarts after 20 hours of running. The compute unit has limited storage space this is to prevent the system to run out of space
+4. Requesting sequence data always goes backwards from the current time you request
+5. It is recommended to request sequence data in reasonable short time sequences. Although the system does not prevent you to look back multiple hours but this might lead into a very long response time
+6. At the fist startup it could be that it restarts immediately because once it has been off the internet the internal system clock might have reseted and once the system starts to sync with nntp the date and time move beyond the 20 hours range
+  
 #### Troubleshoots
 1. In case it takes very long to obtain a snapshot via the getsnapshot API call it could be that either the data receiving and detector part on the compute unit has ran into some issue and is hanging in this case you can try to use
 ```
