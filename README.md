@@ -70,7 +70,7 @@ You can also use this snapshot functionality to visually allign the sensor unit 
 
 ### Detail usages
 
-Once you have the system running, verified it is running and alligned the sensor to cover the area you are interested in you can start using to extract data. For this we included some example python scripts to illustrate the usage of the REST API that runs on the compute unite. See  for more detail
+Once you have the system running, verified it is running and alligned the sensor to cover the area you are interested in you can start using to extract data. For this we included some example python scripts to illustrate the usage of the REST API that runs on the compute unite. See [examples](https://) for more detail
 
 ### Notes
 In this section we describe some general notes about the drinnenbox sensor and a few troubleshoot suggestions.
