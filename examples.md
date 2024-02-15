@@ -10,6 +10,13 @@ This first example script should get you easily started on how to use the data s
 
 ## getcurrentview.py
 
+## getcurrentview.py
+
+## getsequencedata.py
+
+## restartdetection.py
+
+## getsetsettings.py
 
 
 
