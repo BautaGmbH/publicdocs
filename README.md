@@ -66,7 +66,24 @@ Once you have confirmed that everything is up and running you can get a visual s
 ```
 http://IP_ADDRESS_OF_COMPUTE_UNIT:8080/getsnapshot
 ```
+You can also use this snapshot functionality to visually allign the sensor unit to cover the area you are interested in to observe.
 
 ### Detail usages
 
+Once you have the system running, verified it is running and alligned the sensor to cover the area you are interested in you can start using to extract data. For this we included some example python scripts to illustrate the usage of the REST API that runs on the compute unite. See  for more detail
+
 ### Notes
+In this section we describe some general notes about the drinnenbox sensor and a few troubleshoot suggestions.
+
+#### general system notes
+
+#### Troubleshoots
+1. In case it takes very long to obtain a snapshot via the getsnapshot API call it could be that either the data receiving and detector part on the compute unit has ran into some issue and is hanging in this case you can try to use
+```
+http://IP_ADDRESS_OF_COMPUTE_UNIT:8080/restartdetector
+```
+If this does not help repower the sensor unit
+
+2. In case you get a complete black screenshot back from the getnsaphot API. Repower the sensor unit. If the problem keeps on persisting after power-cycling than please get in contact with us
+   
+   
