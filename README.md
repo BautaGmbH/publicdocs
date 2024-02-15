@@ -92,7 +92,7 @@ In this section we describe some general notes about the drinnenbox sensor and a
 ```
 http://IP_ADDRESS_OF_COMPUTE_UNIT:8080/restartdetector
 ```
-If this does not help repower the sensor unit
+If this does not help power cycle the sensor unit
 
 2. In case you get a complete black screenshot back from the getnsaphot API. Repower the sensor unit. If the problem keeps on persisting after power-cycling than please get in contact with us
    
