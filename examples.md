@@ -73,10 +73,12 @@ The feature-mergecorelation2 is like the feature-mergecorrelation but is another
 PERSISTENT: NO
 
 ### minimum-continous-frames-before-nerge
+This sets the minimum number of frames that an object has to be visible in a sungle occurence event time series before it is accept. This setting often helps to get rid of occationally flashing of false positive detections that can show up for a frame or two than disappear again but than a second later appear again for a frame or two.
 
 PERSISTENT: NO
 
 ### minimum-continous-frames-after-nerge
+This sets the minimum number of frames that an object has to be visible in a sungle occurence event after the merging process has gone through. It is recommended to have this value higher than the previous one, as objects that have been visible but than where occluded for a time period but then repeared again and then might have got occluded again all might have a lower number of continous frames but when merged together it could be a significant number of frames. By setting this number to low you might get occational flashing objects back into the mix that the merge process was able to merge together to a slightly longer sequence
 
 PERSISTENT: NO
 
