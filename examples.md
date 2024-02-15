@@ -28,53 +28,55 @@ In a first calls it asks the system for all the current parameters and their cur
 In a second part it changes the value for detector-threshold to a new value and sends the JSON back to the dataservice API. And in a final step it gets the current parameters and their values back so one can see if the threshold paramter has actually been changed. It is worth knowing that some of the paramter changes will stay persistent so that means after a restart or reboot of the compute unit it will use the changed paramter. Other parameters however will not and every restart will change them back to their initial factory value. Bellow is the list of parameters, a short description of what they actually control and if it stays persistent or not.
 
 ### sensor-addres
+This is the internal address to connect to the sensor unit. Please do not change this otherwise the compute unit will not be able to connect to the sensor unit
 
-PERSISTENT:
+PERSISTENT: YES
 
 ### detector-threshold
+Each object detected from the object detector network has a confidence value attached to it. The detector threshold sets the value for how high this confidence value has to be to be accepted as a detection event. By lowering the value it raises the posibility to get false positives in. While setting the value to high might lead to missing certain objects completely
 
-PERSISTENT:
+PERSISTENT: YES
 
 ### sensor-vertical-flip
 
-PERSISTENT:
+PERSISTENT: YES
 
 ### filter-nonmov
 
-PERSISTENT:
+PERSISTENT: NO
 
 ### filter-longvisible
 
-PERSISTENT:
+PERSISTENT: NO
 
 ### mergeIoU-threshold
 
-PERSISTENT:
+PERSISTENT: NO
 
 ### feature-mincorrelation
 
-PERSISTENT:
+PERSISTENT: NO
 
 ### feature-mergecorrelation
 
-PERSISTENT:
+PERSISTENT: NO
 
 ### feature-mergecorrelation2
 
-PERSISTENT:
+PERSISTENT: NO
 
 ### minimum-continous-frames-before-nerge
 
-PERSISTENT:
+PERSISTENT: NO
 
 ### minimum-continous-frames-after-nerge
 
-PERSISTENT:
+PERSISTENT: NO
 
 ### filter-nonmove-threshold
 
-PERSISTENT:
+PERSISTENT: NO
 
 ### filter-maxseconds
 
-PERSISTENT:
+PERSISTENT: NO
