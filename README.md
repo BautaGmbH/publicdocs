@@ -58,13 +58,14 @@ The easiest solution is to have both power supplies of the sensor unit and the c
 ### Quick verification if all is running
 
 After 2-3 minutes after switching both units on in the order suggested above. You can check if everything is running. For this you need to find out to which IP address your network manager has assigned the compute unit to. Once you obtained this IP address you can than use a web browser on a machine that is in the same subnet of the compute unit and enter following address
-
+```
 http://IP_ADDRESS_OF_COMPUTE_UNIT:8080/getstatus
-
+```
 The browser should then return you a JSON String showing you the different system temperatures and also a field SystemRunning. If SystemRunning is False but it is still displaying temperatures that means that the part receiving and analysing the data stream is not running. The most likely reason for this is that it was unable to connect to the sensor unit. It will automically try to do so every 5 seconds. So please make sure the network cable from the sensor unit is plugged into the right network port of the compute unit (see picture above). 
 Once you have confirmed that everything is up and running you can get a visual snapshot from the sensor view using the web broweser again by using following address
-
+```
 http://IP_ADDRESS_OF_COMPUTE_UNIT:8080/getsnapshot
+```
 
 ### Detail usages
 
