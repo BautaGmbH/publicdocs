@@ -1,5 +1,5 @@
 # Public installation and usage documentation for BAUTA's Drinnenbox
-<p align="center"><img width=1127 src="assets/bauta_logo_transparent.png" /></p>
+<p align="center"><img width=1280 src="assets/drinnenbox_banner.jpg" /></p>
 
 ## Setting up the hardware
 
