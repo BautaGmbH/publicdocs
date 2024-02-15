@@ -31,12 +31,12 @@ Slide the mouning plate on top of the tilting bracket
 
 <p align="center"><img width=1600 src="assets/drinnebox_sensor_wall_fixation_part2.jpg"/></p>
 
-#### Second step
+#### Third step
 Now connect on end of the Ethernet Cat5 cabel to the network part on the back of the sensor unit box
 
 <p align="center"><img width=1600 src="assets/drinnenbox_sensor_network_connection.jpg"/></p>
 
-#### Third step
+#### Fourth step
 Remove the protective film from the front of the sensor covering the lens
 
 Now your the sensor unit is ready to be fixated onto the wall or ceiling the recommended operation height is between 2.5 to 3.5 meters above ground level. With a tilting angle between 20-45 degrees. Using it outside these specification will lead to serious performance degration in terms of object detection performance
