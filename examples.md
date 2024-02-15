@@ -27,6 +27,54 @@ Since the compute unit has a number of system settings that both control the det
 In a first calls it asks the system for all the current parameters and their current value which are returned combined in a single JSON structure.
 In a second part it changes the value for detector-threshold to a new value and sends the JSON back to the dataservice API. And in a final step it gets the current parameters and their values back so one can see if the threshold paramter has actually been changed. It is worth knowing that some of the paramter changes will stay persistent so that means after a restart or reboot of the compute unit it will use the changed paramter. Other parameters however will not and every restart will change them back to their initial factory value. Bellow is the list of parameters, a short description of what they actually control and if it stays persistent or not.
 
+### sensor-addres
 
+PERSISTENT:
 
+### detector-threshold
 
+PERSISTENT:
+
+### sensor-vertical-flip
+
+PERSISTENT:
+
+### filter-nonmov
+
+PERSISTENT:
+
+### filter-longvisible
+
+PERSISTENT:
+
+### mergeIoU-threshold
+
+PERSISTENT:
+
+### feature-mincorrelation
+
+PERSISTENT:
+
+### feature-mergecorrelation
+
+PERSISTENT:
+
+### feature-mergecorrelation2
+
+PERSISTENT:
+
+### minimum-continous-frames-before-nerge
+
+PERSISTENT:
+
+### minimum-continous-frames-after-nerge
+
+PERSISTENT:
+
+### filter-nonmove-threshold
+
+PERSISTENT:
+
+### filter-maxseconds
+
+PERSISTENT:
