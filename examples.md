@@ -83,9 +83,11 @@ This sets the minimum number of frames that an object has to be visible in a sun
 PERSISTENT: NO
 
 ### filter-nonmove-threshold
+This parameter specifies the theshold of an objects has to move over the time sequence that it is not filtered by the filter-nonmov
 
 PERSISTENT: NO
 
 ### filter-maxseconds
+This parameter specifies the mainimum amount of seconds an object has to be visible to be filtered by the filter-longvisible option
 
 PERSISTENT: NO
