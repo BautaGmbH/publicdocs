@@ -17,10 +17,13 @@ at the location where the getucrrentview.py script is located
 In case you get the JSON data back along side a warning message that there is a significant time drift and the data might be old try this call again. If this problem persists than there is likely an issue with the detection program. First check if it is running you can do this with the helloblindsensor.py script or via the web browser. If yes then it might be hanging so try the restartdetection.py script next. If not then simply wait for another 5 seonds and try again. If that still persists power-cycle the compute unit
 
 ## getsequencedata.py
+This scripts demonstrates how to get sequence data of a certain length in seconds from the dataservice API. The information is returned as one long JSON string. This script includes a sceleton structure to decode that JSON string for each individual object
 
 ## restartdetection.py
+This scripts demonstrates how to restart the detection service and check again if it is running
 
 ## getsetsettings.py
+Since the compute unit has a number of system settings that both control the detection part of the compute unit as also the assembly of the sequence data it is possible to change these settings from their default setting. The getsetsettings python script shows how this can be done.
 
 
 
