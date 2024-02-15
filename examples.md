@@ -38,30 +38,37 @@ Each object detected from the object detector network has a confidence value att
 PERSISTENT: YES
 
 ### sensor-vertical-flip
+Should the incoming image stream from the sensor unit be vertically flipped or not. This can be the case if you hang the sensor unit upside-down because it is a more confinent arrangment space in the situation. Only under these cirumcstances you should change this value. Otherwise the detector performance will greatly suffer in if the objects in the image stream do not have the correct expected orientation.
 
 PERSISTENT: YES
 
 ### filter-nonmov
+When assembling a data sequence often it can happen that certain false detection persist over the whole sequence. These false detections often tend to be a certain object or constellation in the image that mostly remains static or just has some small jittery movement. An easy way to get rid of these falls negative in the sequence is to basically filter all objects that show no or very little movement. The filter-nonmov parameters switches this sequence filte roption on or off
 
 PERSISTENT: NO
 
 ### filter-longvisible
+Similar to the previous option it might be that although the false negative object is mostly stationary other objects you are interested in are mostly too but occational they do move. This gives an additional option to filter mostly static objects but not by their movement but how long they seem to persist in the sensor area.
 
 PERSISTENT: NO
 
 ### mergeIoU-threshold
+It can happen that during the recording of a sequence and its assembly an object temporarly disappears or gets occluded by another object in the scene, if that occlusion is long enough that the object in interest has moved or the length of occlusion is very long that these events are then registered as the occurance of two different objects. In a subsequent processing step it is determined if some of these individual occurence events can be merged to a single occurence. For this merging process a [IoU metric](https://viso.ai/computer-vision/intersection-over-union-iou/) is used to tell the system how close have the objects visibile be in these events before they are considered to be merged into a single occurence event  
 
 PERSISTENT: NO
 
 ### feature-mincorrelation
+For each object detected a feature vector is generated which acts like a kind of "finger print". This parameter determine what is the minimum correlation value (0.0 meaning not correlated at all while 1.0 extremely correlated) of the "finger print" between two objects to be seen as the same object
 
 PERSISTENT: NO
 
 ### feature-mergecorrelation
+Similar to the mergeIoU threshold the feature-mergecorrelation parameter sets the threshold on how high the "finger prints" correlation of the object in two different occruence events has to be before they are considered to be merged when the IoU metric is low but above the threshold value
 
 PERSISTENT: NO
 
 ### feature-mergecorrelation2
+The feature-mergecorelation2 is like the feature-mergecorrelation but is another threshold that can either be lower or higher than the previous one but gets used when the IoU metric of the the objects in the two different occurence events is high
 
 PERSISTENT: NO
 
