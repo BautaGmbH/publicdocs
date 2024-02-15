@@ -24,6 +24,9 @@ This scripts demonstrates how to restart the detection service and check again i
 
 ## getsetsettings.py
 Since the compute unit has a number of system settings that both control the detection part of the compute unit as also the assembly of the sequence data it is possible to change these settings from their default setting. The getsetsettings python script shows how this can be done.
+In a first calls it asks the system for all the current parameters and their current value which are returned combined in a single JSON structure.
+In a second part it changes the value for detector-threshold to a new value and sends the JSON back to the dataservice API. And in a final step it gets the current parameters and their values back so one can see if the threshold paramter has actually been changed. It is worth knowing that some of the paramter changes will stay persistent so that means after a restart or reboot of the compute unit it will use the changed paramter. Other parameters however will not and every restart will change them back to their initial factory value. Bellow is the list of parameters, a short description of what they actually control and if it stays persistent or not.
+
 
 
 
