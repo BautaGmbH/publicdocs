@@ -61,5 +61,13 @@ http://10.0.0.15:8080
 
 ![Mainpage](assets/eyepatch_console_mainscreen.png)
 ![Mainpage explain](assets/eyepatch_console_mainscreen_exp.png)
-🟩 Green
+🟩 菜单栏 
+更改设置
+实时画面当前帧
+重启机器
+
+🟦 导入系统设置
+
+🟨 系统状态
+
 ## 基于 nVidia Jetson 的检测系统文档
