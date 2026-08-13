@@ -4,6 +4,7 @@
 
 ## Manuals
 [UF-Series](manuals/Betriebsanleitung-UF-Serie-BJ2026+.pdf)
+[KB-Series](manuals/Betriebsanleitung-KB-Serie-BJ2026+.pdf)
 
 ## Documentation on the user frontend software 
 
@@ -52,6 +53,9 @@ http://10.0.0.15:8080
 这将打开 EyePatch 远程网页控制台。有关该网页控制台的更多信息，请参阅下方对应的章节。
 
 ## 手册
+
+[UF-Series](manuals/Betriebsanleitung-UF-Serie-BJ2026+.pdf)
+[KB-Series](manuals/Betriebsanleitung-KB-Serie-BJ2026+.pdf)
 
 ## 用户前端软件文档
 
