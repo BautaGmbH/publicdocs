@@ -60,6 +60,7 @@ http://10.0.0.15:8080
 ## 用户前端软件文档
 
 ![Mainpage](assets/eyepatch_console_mainscreen.png)
+开始页面
 ![Mainpage explain](assets/eyepatch_console_mainscreen_exp.png)
 🟩 菜单栏 
 更改设置
