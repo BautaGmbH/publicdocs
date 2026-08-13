@@ -59,4 +59,7 @@ http://10.0.0.15:8080
 
 ## 用户前端软件文档
 
+![Mainpage](assets/eyepatch_console_mainscreen.png)
+
+
 ## 基于 nVidia Jetson 的检测系统文档
