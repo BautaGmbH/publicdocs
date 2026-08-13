@@ -3,6 +3,7 @@
 ## General information
 
 ## Manuals
+[UF-Series](manuals/Betriebsanleitung-UF-Serie-BJ2026+.pdf)
 
 ## Documentation on the user frontend software 
 
