@@ -11,10 +11,13 @@
 ## Documentation on the user frontend software 
 
 ## Documentation on the nVidia Jetson based detection system
-Here is an illustration how to connect the Eyepatch and nVidia Jetson system together. In this scenario we have a nVidia Jetson ORIN device that has only a single Ethernet port. This means you need an additional USB-Ethernet-Adapter to be able and plug it into your local network to be able to access the nVidia Jetson system operating console. In normal operation mode this USB port is occupied by an USB LTE cellular network modem stick
+Here is an illustration on how to connect the Eyepatch system with the nVidia Jetson analysis system. In this illustrated scenario we have a nVidia Jetson ORIN device that has only a single Ethernet port. This means in order to access the nVidia Jetson device while it is connected to the EyePatch system you need an additional USB-Ethernet-Adapter to be able and plug it into your local network. Otherwise you can not access the nVidia Jetson system operating console. In its normal operation mode this USB port is occupied by an USB LTE cellular network modem stick. 
 
 ![Connect](assets/connect_devices.png)
 
+The ethernet port of the nVidia Jetson system is pre-configured to be in the same fixed subnet than the EyePatch. Unless you have changed the IP settings of the EyePatch system no further configuration is required. 
+
+Notice after turning on the nVidia Jetson startup sequence takes a while before the detection process is started and therefore it connects to the EyePatch systems as it first does some internal housekeeping tasks, e.g. checking for new software updates and sending off reports. Usually this is done via the LTE cellular network modem stick, which mean it can take up to 10 minutes (if no carrier signal can be found). However the nVidia Jetson web console can be accessed already roughly 30 seconds after switching on.
 
 # 关于 BAUTA 盲传感器的公开文档   
 
