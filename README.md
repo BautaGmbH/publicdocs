@@ -84,3 +84,19 @@ http://10.0.0.15:8080
 🟨 系统状态
 
 ## 基于 nVidia Jetson 的检测系统文档
+
+这是一个示例，说明如何将 EyePatch 系统 与 NVIDIA Jetson 分析系统连接起来。
+在此示例场景中，我们使用的是一台 NVIDIA Jetson ORIN 设备，它只有 一个以太网端口。
+这意味着：当 Jetson 设备连接到 EyePatch 系统时，如果你仍然需要访问 Jetson 的操作控制台，就必须额外使用 USB‑以太网适配器 将其接入你的本地网络。否则，你将无法访问 NVIDIA Jetson 系统的操作界面。
+
+在正常运行模式下，这个 USB 端口通常被 USB LTE 蜂窝网络调制解调器占用。
+
+![Connect](assets/connect_devices.png)
+
+nVidia Jetson 系统的以太网端口已预先配置为与 EyePatch 处于同一个固定子网。  
+只要你没有更改 EyePatch 系统的 IP 设置，就不需要进行任何额外的网络配置。
+
+请注意：在开启 nVidia Jetson 后，它的启动流程需要一段时间，只有在完成内部的初始化任务后才会开始检测流程并连接到 EyePatch 系统。
+这些内部任务包括：检查是否有新的软件更新、发送系统报告等。通常这些操作是通过 USB LTE 蜂窝网络调制解调器完成的。如果无法找到运营商信号，这些步骤可能会持续 最长约 10 分钟。
+
+然而，nVidia Jetson 的 Web 控制台通常在开机约 30 秒后就可以访问，无需等待上述后台任务完成。
