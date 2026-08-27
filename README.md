@@ -3,12 +3,18 @@
 ## General information
 
 ## Manuals
-[UF-Series](manuals/Betriebsanleitung-UF-Serie-BJ2026+.pdf)
-[KB-Series](manuals/Betriebsanleitung-KB-Serie-BJ2026+.pdf)
+[UF-Series German](manuals/Betriebsanleitung-UF-Serie-BJ2026+.pdf)
+[UF-Series English](manuals/Operatingmanual-UF-Serie-BJ2026+.pdf)
+[KB-Series German](manuals/Betriebsanleitung-KB-Serie-BJ2026+.pdf) 
+[KB-Series English](manuals/Operatingmanual-KB-Serie-BJ2026+.pdf) 
 
 ## Documentation on the user frontend software 
 
 ## Documentation on the nVidia Jetson based detection system
+Here is an illustration how to connect the Eyepatch and nVidia Jetson system together. In this scenario we have a nVidia Jetson ORIN device that has only a single Ethernet port. This means you need an additional USB-Ethernet-Adapter to be able and plug it into your local network to be able to access the nVidia Jetson system operating console. In normal operation mode this USB port is occupied by an USB LTE cellular network modem stick
+
+![Connect](assets/connect_devices.png)
+
 
 # 关于 BAUTA 盲传感器的公开文档   
 
@@ -54,8 +60,11 @@ http://10.0.0.15:8080
 
 ## 手册
 
-[UF-Series](manuals/Betriebsanleitung-UF-Serie-BJ2026+.pdf)
-[KB-Series](manuals/Betriebsanleitung-KB-Serie-BJ2026+.pdf)
+[UF-Series German](manuals/Betriebsanleitung-UF-Serie-BJ2026+.pdf)
+[UF-Series English](manuals/Operatingmanual-UF-Serie-BJ2026+.pdf)
+[KB-Series German](manuals/Betriebsanleitung-KB-Serie-BJ2026+.pdf) 
+[KB-Series English](manuals/Operatingmanual-KB-Serie-BJ2026+.pdf) 
+
 
 ## 用户前端软件文档
 
