@@ -19,6 +19,15 @@ The ethernet port of the nVidia Jetson system is pre-configured to be in the sam
 
 Notice after turning on the nVidia Jetson startup sequence takes a while before the detection process is started and therefore it connects to the EyePatch systems as it first does some internal housekeeping tasks, e.g. checking for new software updates and sending off reports. Usually this is done via the LTE cellular network modem stick, which mean it can take up to 10 minutes (if no carrier signal can be found). However the nVidia Jetson web console can be accessed already roughly 30 seconds after switching on.
 
+To access the web console you need to know which IP the device has been assigned to then use your favourite web browser on a device that is in the same subnet as the Jetson device, and go to:
+
+```
+http://IP_OF_JETSON_DEVICE:8080 
+```
+
+You should see a screen like this
+
+![Jetson webconsole](assets/jetson_web_console_screenshot.png)
 # 关于 BAUTA 盲传感器的公开文档   
 
 ## 一般信息
