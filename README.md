@@ -109,3 +109,10 @@ nVidia Jetson 系统的以太网端口已预先配置为与 EyePatch 处于同�
 这些内部任务包括：检查是否有新的软件更新、发送系统报告等。通常这些操作是通过 USB LTE 蜂窝网络调制解调器完成的。如果无法找到运营商信号，这些步骤可能会持续 最长约 10 分钟。
 
 然而，nVidia Jetson 的 Web 控制台通常在开机约 30 秒后就可以访问，无需等待上述后台任务完成。
+
+访问网页控制台之前，你需要先知道设备被分配到的 IP 地址。然后，在与 Jetson 设备处于同一子网的另一台设备上，使用你喜欢的网页浏览器，打开以下地址：
+```
+http://IP_OF_JETSON_DEVICE:8080 
+```
+你应该会看到一个类似这样的界面
+![Jetson webconsole](assets/jetson_web_console_screenshot.png)
