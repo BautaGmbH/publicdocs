@@ -3,12 +3,21 @@
 ## General information
 
 ## Manuals
-[UF-Series](manuals/Betriebsanleitung-UF-Serie-BJ2026+.pdf)
-[KB-Series](manuals/Betriebsanleitung-KB-Serie-BJ2026+.pdf)
+[UF-Series German](manuals/Betriebsanleitung-UF-Serie-BJ2026+.pdf)
+[UF-Series English](manuals/Operatingmanual-UF-Serie-BJ2026+.pdf)
+[KB-Series German](manuals/Betriebsanleitung-KB-Serie-BJ2026+.pdf) 
+[KB-Series English](manuals/Operatingmanual-KB-Serie-BJ2026+.pdf) 
 
 ## Documentation on the user frontend software 
 
 ## Documentation on the nVidia Jetson based detection system
+Here is an illustration on how to connect the Eyepatch system with the nVidia Jetson analysis system. In this illustrated scenario we have a nVidia Jetson ORIN device that has only a single Ethernet port. This means in order to access the nVidia Jetson device while it is connected to the EyePatch system you need an additional USB-Ethernet-Adapter to be able and plug it into your local network. Otherwise you can not access the nVidia Jetson system operating console. In its normal operation mode this USB port is occupied by an USB LTE cellular network modem stick. 
+
+![Connect](assets/connect_devices.png)
+
+The ethernet port of the nVidia Jetson system is pre-configured to be in the same fixed subnet than the EyePatch. Unless you have changed the IP settings of the EyePatch system no further configuration is required. 
+
+Notice after turning on the nVidia Jetson startup sequence takes a while before the detection process is started and therefore it connects to the EyePatch systems as it first does some internal housekeeping tasks, e.g. checking for new software updates and sending off reports. Usually this is done via the LTE cellular network modem stick, which mean it can take up to 10 minutes (if no carrier signal can be found). However the nVidia Jetson web console can be accessed already roughly 30 seconds after switching on.
 
 # 关于 BAUTA 盲传感器的公开文档   
 
@@ -54,8 +63,11 @@ http://10.0.0.15:8080
 
 ## 手册
 
-[UF-Series](manuals/Betriebsanleitung-UF-Serie-BJ2026+.pdf)
-[KB-Series](manuals/Betriebsanleitung-KB-Serie-BJ2026+.pdf)
+[UF-Series German](manuals/Betriebsanleitung-UF-Serie-BJ2026+.pdf)
+[UF-Series English](manuals/Operatingmanual-UF-Serie-BJ2026+.pdf)
+[KB-Series German](manuals/Betriebsanleitung-KB-Serie-BJ2026+.pdf) 
+[KB-Series English](manuals/Operatingmanual-KB-Serie-BJ2026+.pdf) 
+
 
 ## 用户前端软件文档
 
@@ -72,3 +84,19 @@ http://10.0.0.15:8080
 🟨 系统状态
 
 ## 基于 nVidia Jetson 的检测系统文档
+
+这是一个示例，说明如何将 EyePatch 系统 与 NVIDIA Jetson 分析系统连接起来。
+在此示例场景中，我们使用的是一台 NVIDIA Jetson ORIN 设备，它只有 一个以太网端口。
+这意味着：当 Jetson 设备连接到 EyePatch 系统时，如果你仍然需要访问 Jetson 的操作控制台，就必须额外使用 USB‑以太网适配器 将其接入你的本地网络。否则，你将无法访问 NVIDIA Jetson 系统的操作界面。
+
+在正常运行模式下，这个 USB 端口通常被 USB LTE 蜂窝网络调制解调器占用。
+
+![Connect](assets/connect_devices.png)
+
+nVidia Jetson 系统的以太网端口已预先配置为与 EyePatch 处于同一个固定子网。  
+只要你没有更改 EyePatch 系统的 IP 设置，就不需要进行任何额外的网络配置。
+
+请注意：在开启 nVidia Jetson 后，它的启动流程需要一段时间，只有在完成内部的初始化任务后才会开始检测流程并连接到 EyePatch 系统。
+这些内部任务包括：检查是否有新的软件更新、发送系统报告等。通常这些操作是通过 USB LTE 蜂窝网络调制解调器完成的。如果无法找到运营商信号，这些步骤可能会持续 最长约 10 分钟。
+
+然而，nVidia Jetson 的 Web 控制台通常在开机约 30 秒后就可以访问，无需等待上述后台任务完成。
