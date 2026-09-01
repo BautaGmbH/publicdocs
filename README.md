@@ -28,6 +28,17 @@ http://IP_OF_JETSON_DEVICE:8080
 You should see a screen like this
 
 ![Jetson webconsole](assets/jetson_web_console_screenshot.png)
+
+Short explanation of the web console main page
+
+![Jetson webconsole_exp](assets/jetson_web_console_screenshot_explain.png)
+
+🟩 Main menu bar available on every page
+
+🟦 Main system status overview
+
+🟨 Current important system status and metrics
+
 # BAUTA의 블라인드센서에 대한 공개 문서   
 
 ## 총괄 정보
