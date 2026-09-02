@@ -128,3 +128,10 @@ http://IP_OF_JETSON_DEVICE:8080
 ```
 다음과 같은 화면이 표시됩니다
 ![Jetson webconsole](assets/jetson_web_console_screenshot.png)
+웹 콘솔 메인 페이지에 대한 간단한 설명  
+![Jetson webconsole_exp](assets/jetson_web_console_screenshot_explain.png)
+🟩 전 페이지에 공통 적용되는 메인 메뉴 바 구성 요소 
+
+🟦 주요 시스템 상태 개요
+
+🟨 시스템의 주요 상태 정보와 핵심 메트릭의 현재값
